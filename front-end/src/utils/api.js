@@ -5,8 +5,8 @@
  import formatReservationDate from "./format-reservation-date";
  import formatReservationTime from "./format-reservation-date";
  
- const API_BASE_URL =
-   process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'development' || "http://localhost:3000";
+ 
+   const API_BASE_URL = process.env.NODE_ENV === 'production' ?  "https://periodictables-backend.onrender.com" : "http://localhost:5500"
  
  /**
   * Defines the default headers for these functions to work with `json-server`
